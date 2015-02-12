@@ -1,5 +1,9 @@
 describe("numbersInWords", function() {
 
+  it('returns 0 in words', function() {
+    expect(numbersInWords(0)).to.equal("zero");
+  });
+
   it('returns 19 in words', function() {
     expect(numbersInWords(19)).to.equal("nineteen");
   });
@@ -12,8 +16,8 @@ describe("numbersInWords", function() {
     expect(numbersInWords(100)).to.equal("one hundred");
   });
 
-  it('returns 200 in words', function() {
-    expect(numbersInWords(200)).to.equal("two hundred");
+  it('returns 204 in words', function() {
+    expect(numbersInWords(204)).to.equal("two hundred four");
   });
 
   it('returns 221 in words', function() {
